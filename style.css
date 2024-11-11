@@ -1,0 +1,282 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding:0px;
+    background-color:#e2e2e2;
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+
+
+
+.navbar{
+    background-color: black;
+    justify-content: space-between;
+    display: flex;
+    margin: 0px;
+    width: 100%;
+}
+
+.navbar div h3{
+    color: white;
+    margin-left: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar ul {
+margin-right: 60px;
+list-style: none;
+  
+}
+
+
+.navbar ul li  {
+    display: flex;
+    list-style: none;
+    
+    
+    
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 5px 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+
+
+
+.cursor {
+    display: inline-block;
+    background-color: black;
+    width: 2px;
+    animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+
+
+.bg-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    height: 90vh; /* Adjust to fit your design */
+    z-index: -1;
+    width: 97%; /* Ensure the container takes full width */
+}
+
+.bg-images img {
+    width: 100%; /* Make the image fill the container's width */
+    height: 100%; /* Make the image fill the container's height */
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+    border-radius: 10px; /* Optional: rounded corners */
+    filter: brightness(0.3);
+}
+
+.text-container {
+    position: absolute;
+    top: 20%; 
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the text */
+    width: 80%; /* Adjust width to fit within the image */
+    max-width: calc(100% - 40px); /* Ensure it doesn't exceed container */
+    font-size: calc(95% *10); /* Adjust font size as needed */
+    line-height: 1.2; /* Adjust line-height for readability */
+    color: white;
+    text-align: center; /* Center the text */
+    overflow-wrap: break-word; /* Ensure text wraps */
+    z-index: 1;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+}
+
+
+
+.oswald-bgtext {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+
+.advertise{
+    display:flex;
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    background-color: black;
+    position: relative;
+    top: -15px;
+    color: white;
+    height: 180px;
+    border-radius: 10px;
+    justify-content: space-between;
+    
+}
+
+.advertise p{
+    position: relative;
+    top: 40px;
+    font-size:large;
+    margin: 5px;
+    width: 70%;
+    
+}
+
+
+.advertise p b{
+  font-size: xx-large;
+}
+
+.advertise img{
+ width: 150px;
+ height: 150px;
+ object-fit: cover;
+ margin:10px 20px 10px 20px;
+ 
+}
+
+.container {
+    width: 70%; /* Set the width to 90% */
+    margin: auto; /* Center the container */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Create 2 columns */
+    gap: 20px; /* Add space between the grid items */
+}
+
+.card {
+    background-color: black; /* Add black background */
+    border-radius: 10px; /* Optional: Rounded corners */
+    overflow: hidden; /* Ensure content doesn't overflow */
+    padding: 10px; /* Add some padding to make the image smaller */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Shadow for effect */
+}
+
+.card img {
+    width: 100%; /* Scale down the image */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra spacing */
+    margin: auto; /* Center the image inside the card */
+    filter: brightness(0.8);
+    border-radius: 10px;
+}
+
+.car img{
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.intro1{
+    height:10px;
+    width: 350px;
+    padding: 6x;
+    position: absolute;
+    color: white;
+    bottom: 390px;
+    transition: .5s;
+    margin-left: 40px;
+    padding-left: 30px;
+    border-radius: 10px;
+}
+
+.intro2{
+    height:10px;
+    width: 350px;
+    padding: 6x;
+    position: absolute;
+    color: white;
+    bottom: 70px;
+    transition: .5s;
+    margin-left: 40px;
+    padding-left: 30px;
+    border-radius: 10px;
+}
+
+.intro1 h1{
+    margin: 10px;
+    font-size: 30px;
+}
+
+.intro1 p{
+    font-size: 20px;
+    margin: 10px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+.intro2 h1{
+    margin: 10px;
+    font-size: 30px;
+}
+
+.intro2 p{
+    font-size: 20px;
+    margin: 10px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+
+
+.card:hover{
+  cursor: pointer;
+}
+
+.card:hover .intro1 {
+height: 220px;
+background-color: rgba(0, 0, 0, 0.767);
+}
+
+.card:hover .intro2 {
+    height: 220px;
+    background-color: rgba(0, 0, 0, 0.767);
+}
+
+.card:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+.number {
+    font-weight: bold;
+    color: white;
+    font-size: 60px;
+    margin-left: 130px;
+    margin-top: 50px;
+}
+
+
+.card span{
+    color: white;
+    font-size: xx-large;
+    margin-left: 80px;
+}
+
+
+
+
+
+
+
+
+
