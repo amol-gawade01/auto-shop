@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #e2e2e2;
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-y: auto; /* Allow vertical scrolling */
+    background-color: black;
+  }
+  
+  .navbar {
+    background-color: black;
+    justify-content: space-between;
+    display: flex;
+    margin: 0px;
+    width: 100%;
+  }
+  
+  .navbar div h3 {
+    color: white;
+    margin-left: 50px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  
+  .navbar ul {
+    margin-right: 60px;
+    list-style: none;
+  }
+  
+  .navbar ul li {
+    display: flex;
+    list-style: none;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: white;
+    margin: 5px 15px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+
+  .container{
+    background-color: black;
+    width: 90vw;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .card{
+    width: 100%;
+    height: 70%;
+    background-color:black;
+    margin: auto;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .card1{
+    width: 60%;
+    height: auto;
+    color: white;
+    background-color: chartreuse;
+    text-align: center;
+    margin-top: 100PX;
+    margin: auto;
+    padding: 50px;
+    border-radius: 20px;
+    
+  }
+
+  .card1 p{
+    font-weight: 700;
+  }
+
+  .card2{
+    width: 30%;
+    height: 300px;
+    border-radius: 50px;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  .card2 img{
+    border-radius: 50%;
+    width: 80%;
+    height: 90%;
+    object-fit: cover;
+    border: 1px solid chartreuse;
+  }
+
+
+  form {
+    max-width: 600px;
+    margin: auto;
+    background-color: #222831;
+    color: white;
+    font-weight: 400;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+label {
+    display: block;
+    margin-top: 10px;
+}
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #4cae4c;
+}
+.error {
+    color: red;
+    font-size: 0.9em;
+}

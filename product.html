@@ -27,13 +27,19 @@
     </div>
     <div class="navbar2">
         <div class="searchbox">
-            <input type="text" placeholder="search">
-            <button>search</button>
-            <button id="filter-btn"></button>
+            <input type="text" placeholder="search" id="search-temp">
+            <button id="search-btn" onclick='searchitem()'>search</button>
+            <button id="filter-btn" ></button>
+            <div id="filter-options" class="filter-options">
+                <button class="filter-option" data-filter="body-parts">Body Parts</button>
+                <button class="filter-option" data-filter="main-parts">Main Parts</button>
+                <button class="filter-option" data-filter="engine-parts">Engine Parts</button>
+            </div>
         </div>
         <div class="rightnavbar">
            <div class="shopcart">
             <img src="assets/shopping-cart (3).png" alt="cart">
+            <h4 id="buy-counter">0</h4>
            </div>
         </div>
     </div>
@@ -660,5 +666,6 @@
           </div> 
         
     </div>
+    <script src="product.js"></script>
 </body>
 </html>

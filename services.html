@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="services.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+        <div>
+            <h3>Auto Shop</h3>
+        </div>
+        <div>
+
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                    <a href="aboutus.html">About Us</a>
+                    <a href="secondvehicles.html">Resale</a>
+                    <a href="services.html">Services</a>
+                    <a href="product.html">Products</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="container">
+      <div class="card">
+        <div class="card1" style="color: black;">
+          <h2>Car Maintenance & Oil Change</h2>
+          <p>Regular oil changes and fluid checks to keep vehicles running smoothly, ensuring engine health and longevity.</p>
+        </div>
+        <div class="card2">
+           <img src="assets/pexels-daniel-andraski-197681005-13065697.jpg" alt="service">
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card2">
+           <img src="assets/pexels-artempodrez-8986177.jpg" alt="service" style="border: 1px solid #ad49e1;">
+        </div>
+        <div class="card1" style="background-color: #ad49e1;">
+            <h2>Tire Services</h2>
+            <p>Includes tire rotations, balancing, and replacements, along with tire pressure checks to enhance safety and performance.</p>
+          </div>
+      </div>
+
+      <div class="card">
+        <div class="card1" style="background-color: #faf7f0; color: black;">
+          <h2>Bodywork & Collision Repair</h2>
+          <p>Services for repairing dents, scratches, and more extensive collision damage, including painting and frame alignment to restore the vehicle's appearance and functionality.</p>
+        </div>
+        <div class="card2">
+           <img src="assets/pexels-esmihel-14615261.jpg" alt="service" style="border: 1px solid #faf7f0">
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card2">
+           <img src="assets/pexels-gustavo-fring-6870307.jpg" alt="service" style="border: 1px solid #b17457;">
+        </div>
+        <div class="card1" style="background-color: #b17457;">
+            <h2>Brake Repair & Replacement</h2>
+            <p>Offer brake inspections, pad replacements, and repairs to ensure vehicle safety and optimal stopping performance.</p>
+          </div>
+      </div>
+
+      <div class="card" >
+        <div class="card1" style="background-color: #387478;">
+          <h2>Diagnostics & Engine Repair</h2>
+          <p>Provide electronic diagnostics to identify issues with the engine, exhaust system, or other key components, followed by professional repairs.</p>
+        </div>
+        <div class="card2">
+           <img src="assets/pexels-xavier-wr-716712935-20867316.jpg" alt="service" style="border: 1px solid #387478;">
+        </div>
+      </div>
+    </div>
+
+
+    <h2>Automobile Service Request Form</h2>
+    <form >
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="3" required></textarea>
+
+        <label for="contact">Contact Number:</label>
+        <input type="tel" id="contact" name="contact" pattern="[0-9]{10}" placeholder="e.g., 1234567890" required>
+
+        <label for="email">Email ID:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="car">Car:</label>
+        <input type="text" id="car" name="car" placeholder="e.g., Toyota, Honda" required>
+
+        <label for="model">Model:</label>
+        <input type="text" id="model" name="model" placeholder="e.g., Corolla, Civic" required>
+         
+        <label for="service">Service Requested:</label>
+        <select id="service" name="service" required>
+            <option value="oil_change">Oil Change</option>
+            <option value="tire_service">Tire Service</option>
+            <option value="brake_repair">Brake Repair</option>
+            <option value="engine_diagnostics">Engine Diagnostics</option>
+            <option value="ac_repair">AC & Heating Repair</option>
+            <option value="bodywork">Bodywork & Collision Repair</option>
+        </select>
+
+        <button type="submit" onclick="submitted()">Submit Request</button>
+    </form>
+
+    <script src="service.js"></script>
+</body>
+</html>
